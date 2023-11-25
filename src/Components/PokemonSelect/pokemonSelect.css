@@ -15,6 +15,7 @@
   }
   .filter-input {
     font-size: 11px;
+    height: 44px;
   }
   .pokemon-image {
     width: 10em !important;

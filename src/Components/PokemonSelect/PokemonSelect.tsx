@@ -20,7 +20,7 @@ const PokemonSelect: React.FC<PokemonSelectProps> = ({
   };
 
   const filteredData = data.filter((pokemon) =>
-    pokemon.name.toLowerCase().includes(searchTerm)
+    pokemon.name.toLowerCase().trim().includes(searchTerm.toLowerCase().trim())
   );
 
   return (

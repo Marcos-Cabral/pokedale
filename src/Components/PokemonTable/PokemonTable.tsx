@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { PokemonTableProps } from "../../types/PokemonTableProps";
 import "./PokemonTable.css";
+import { typesMatch } from "../../Helpers";
 
 const PokemonTable: React.FC<PokemonTableProps> = ({
   attemptedPokemons,
   pokemonAleatorio,
-  typesMatch,
 }: PokemonTableProps) => {
   const [triggerAnimation, setTriggerAnimation] = useState(false);
 
   useEffect(() => {
-    // Establecer triggerAnimation después de un tiempo al cambiar attemptedPokemons
     if (attemptedPokemons.length == 1) {
       setTriggerAnimation(true);
     }
@@ -19,8 +18,8 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
       setTriggerAnimation(true);
 
       const timer = setTimeout(() => {
-        setTriggerAnimation(false); // Restablecer triggerAnimation después de la animación
-      }, 1000); // Cambia el valor del retraso según tu preferencia
+        setTriggerAnimation(false);
+      }, 1000);
 
       return () => clearTimeout(timer);
     }
@@ -91,7 +90,7 @@ const PokemonTable: React.FC<PokemonTableProps> = ({
                   }}
                 >
                   {pokemon.faseEvolution ===
-                  pokemonAleatorio.faseEvolution ? null : (
+                    pokemonAleatorio.faseEvolution ? null : (
                     <img
                       className={
                         pokemonAleatorio.faseEvolution > pokemon.faseEvolution
