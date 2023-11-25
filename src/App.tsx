@@ -23,14 +23,14 @@ function App() {
   function generarPokemon() {
     const indiceAleatorio = Math.floor(Math.random() * pokemonData.length);
     const pokemonAleatorio = pokemonData[indiceAleatorio];
-    console.log(pokemonAleatorio.name, pokemonAleatorio.types);
     setPokemonAleatorio(pokemonAleatorio);
   }
 
   useEffect(() => {
     generarPokemon();
 
-    /* const fetchData = async () => {
+    /* codigo automatizado para exportar la informacion a json 
+    const fetchData = async () => {
       try {
         const response = await fetch(
           //"https://pokeapi.co/api/v2/pokemon?limit=151&offset=0"
