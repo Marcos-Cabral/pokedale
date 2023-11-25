@@ -97,6 +97,7 @@
   .nes-dialog {
     font-size: 12px !important;
     margin-top: 120px;
+    width: 80%;
   }
   .dialog-title {
     font-size: 16px;
