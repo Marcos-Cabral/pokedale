@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PokemonTableProps } from "../../types/PokemonTableProps";
 import "./PokemonTable.css";
 
