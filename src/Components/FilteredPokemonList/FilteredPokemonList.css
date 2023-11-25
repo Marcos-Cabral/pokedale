@@ -1,0 +1,6 @@
+.nes-search-container {
+    padding: 0px !important;
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }

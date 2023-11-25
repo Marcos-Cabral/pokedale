@@ -1,0 +1,39 @@
+/* PokemonSelect.css */
+
+.pokemon-select {
+  width: 260px;
+  background: #f9f9f9;
+  border-radius: 6px 6px 0px 0px;
+}
+.pokemon-image {
+  width: 60px !important;
+  height: 60px !important;
+}
+@media only screen and (max-width: 600px) {
+  .pokemon-select {
+    margin: 20px;
+  }
+  .filter-input {
+    font-size: 11px;
+  }
+  .pokemon-image {
+    width: 10em !important;
+    height: 10em !important;
+  }
+}
+
+.filter-input {
+  margin-bottom: 10px;
+}
+
+.pokemon-list {
+  position: absolute;
+  width: 260px;
+  z-index: 100;
+}
+
+.pokemon-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
