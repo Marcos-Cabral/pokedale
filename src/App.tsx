@@ -24,7 +24,6 @@ function App() {
   function generarPokemon() {
     const indiceAleatorio = Math.floor(Math.random() * pokemonData.length);
     const pokemonAleatorio = pokemonData[indiceAleatorio];
-    console.log(pokemonAleatorio.name)
     setPokemonAleatorio(pokemonAleatorio);
   }
 
