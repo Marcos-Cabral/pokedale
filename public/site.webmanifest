@@ -1,0 +1,35 @@
+{
+  "name": "PokeDale",
+  "short_name": "Pkd",
+  "start_url": "/",
+  "screenshots": [
+    {
+      "src": "/screenPC.png",
+      "sizes": "1280x720",
+      "type": "image/png",  
+      "purpose": "any",
+      "form_factor": "wide"
+    },
+    {
+        "src": "/screenMobile.png",
+        "sizes": "640x1136",
+        "type": "image/png",
+        "purpose": "any"
+      }
+  ],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
