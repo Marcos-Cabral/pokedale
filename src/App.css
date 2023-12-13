@@ -11,6 +11,7 @@
   min-height: 400px;
   padding: 50px 10px;
 }
+
 .nes-dialog {
   width: 50%;
   display: flex;
@@ -21,21 +22,25 @@
   position: absolute;
   top: 7%;
 }
+
 .btn-reset {
   right: 0 !important;
   position: absolute !important;
   top: 0 !important;
   margin: 20px !important;
 }
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -44,6 +49,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -62,9 +68,11 @@
 .read-the-docs {
   color: #888;
 }
+
 .title {
   font-size: 35px;
 }
+
 .btn-reset {
   width: 52px;
   height: 52px;
@@ -74,17 +82,21 @@
   padding: 0;
   margin: 10px 10px !important;
 }
+
 .dialog-menu {
   display: flex;
 }
+
 .nes-btn-close {
   position: relative;
   left: -40px !important;
 }
+
 @media only screen and (max-width: 600px) {
   .title {
     font-size: 21px;
   }
+
   .btn-reset {
     width: 52px;
     height: 52px;
@@ -94,20 +106,53 @@
     padding: 0;
     margin: 10px 10px !important;
   }
-  .reset-game-dialog{
+
+  .reset-game-dialog {
     width: 136px;
   }
+
   .nes-dialog {
     font-size: 12px !important;
     margin-top: 120px;
     width: 80%;
   }
+
   .dialog-title {
     font-size: 16px;
   }
+
   .game-container {
     width: 100%;
     top: 0px;
     min-height: 100%;
   }
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  margin: 2rem 0;
+}
+
+.label-container {
+  background-color: #212529;
+  padding: 1rem 0;
+}
+
+.checkbox-label {
+  padding: 7px 20px;
+  background-color: #212529;
+  margin: 0;
+}
+.btn-play{
+  width: 20px !important;
+  height: 20px !important;
+  display: flex !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+.checkbox-label:hover {
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
 }

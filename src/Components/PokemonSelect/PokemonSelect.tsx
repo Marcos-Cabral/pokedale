@@ -3,6 +3,7 @@ import "./pokemonSelect.css";
 import { PokemonSelectProps } from "../../types/PokemonSelectProps";
 import { Pokemon } from "../../types/Pokemon";
 import FilteredPokemonList from "../FilteredPokemonList/FilteredPokemonList";
+import { useGameContext } from "../../Context/GameContext";
 
 const PokemonSelect: React.FC<PokemonSelectProps> = ({
   data,
@@ -10,6 +11,7 @@ const PokemonSelect: React.FC<PokemonSelectProps> = ({
 }: PokemonSelectProps) => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const inputRef = useRef<HTMLInputElement>(null);
+  const { selectedGenerations } = useGameContext();
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value.toLowerCase());
@@ -21,7 +23,8 @@ const PokemonSelect: React.FC<PokemonSelectProps> = ({
   };
 
   const filteredData = data.filter((pokemon) =>
-    pokemon.name.toLowerCase().trim().includes(searchTerm.toLowerCase().trim())
+    pokemon.name.toLowerCase().trim().includes(searchTerm.toLowerCase().trim()) &&
+    selectedGenerations.includes(pokemon.generation)
   );
   useEffect(() => {
     if (inputRef.current) {
