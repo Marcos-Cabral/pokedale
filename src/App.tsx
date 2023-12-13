@@ -8,7 +8,7 @@ import "./App.css";
 import Dialog from "./Components/Dialog/Dialog";
 import { useGameContext } from "./Context/GameContext";
 const GENERATIONS_TOTAL = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const generationRanges = {
+const generationRanges: any = {
   1: { startIndex: 0, endIndex: 150 },
   2: { startIndex: 151, endIndex: 251 },
   3: { startIndex: 251, endIndex: 385 },
